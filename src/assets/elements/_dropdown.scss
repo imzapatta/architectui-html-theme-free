@@ -38,6 +38,7 @@
     }
 
     &:hover {
+      color: $white;
       .dropdown-icon {
         opacity: .7;
       }

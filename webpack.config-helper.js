@@ -26,7 +26,7 @@ for (let i = 0; i < pages.length; i++) {
 }
 
 module.exports = (options) => {
-    const dest = Path.join(__dirname, 'architectui-html-free');
+    const dest = Path.join(__dirname, 'mapfre-ui');
 
     let webpackConfig = {
         devtool: options.devtool,
@@ -34,10 +34,7 @@ module.exports = (options) => {
             main: './src/app.js',
             demo: './src/scripts-init/demo.js',
             toastr: './src/scripts-init/toastr.js',
-            scrollbar: './src/scripts-init/scrollbar.js',
-            fullcalendar: './src/scripts-init/calendar.js',
-            maps: './src/scripts-init/maps.js',
-            chart_js: './src/scripts-init/charts/chartjs.js',
+            scrollbar: './src/scripts-init/scrollbar.js'
         },
         output: {
             path: dest,
@@ -82,7 +79,7 @@ module.exports = (options) => {
                     }
                 },
                 {
-                    test: /\.(woff(2)?|ttf|eot|svg)(\?v=\d+\.\d+\.\d+)?$/,
+                    test: /\.(woff(2)?|ttf|eot)(\?v=\d+\.\d+\.\d+)?$/,
                     use: [{
                         loader: 'file-loader',
                         options: {
@@ -92,7 +89,7 @@ module.exports = (options) => {
                     }]
                 },
                 {
-                    test: /\.(gif|jpg|png)$/,
+                    test: /\.(gif|jpg|png|svg)$/,
                     loader: 'file-loader',
                     options: {
                         name: '[name].[ext]',
@@ -108,11 +105,7 @@ module.exports = (options) => {
             './src/app.js',
             './src/scripts-init/demo.js',
             './src/scripts-init/toastr.js',
-            './src/scripts-init/scrollbar.js',
-            './src/scripts-init/calendar.js',
-            './src/scripts-init/maps.js',
-            './src/scripts-init/charts/chartjs.js',
-
+            './src/scripts-init/scrollbar.js'
         ];
 
         webpackConfig.plugins.push(

@@ -42,12 +42,12 @@ $grays: map-merge(
 );
 
 //--#{$color}
-$brand: #3f6ad8;
+$brand: #DA291C;
 $blue: #78C3FB;
 $indigo: #444054;
 $purple: #794c8a;
 $pink: #f65ca2;
-$red: #d92550;
+$red: #DA291C;
 $orange: #fd7e14;
 $yellow: #f7b924;
 $green: #3ac47d;
@@ -105,7 +105,7 @@ $card-cap-bg: $white;
 $card-border-color: rgba(darken($primary, 25%), .125);
 
 $dropdown-min-width: 15rem;
-$dropdown-link-hover-bg: #e0f3ff;
+$dropdown-link-hover-bg: rgba($brand,.8);
 $dropdown-item-padding-y: .4rem;
 $dropdown-padding-y: .65rem;
 
@@ -145,8 +145,8 @@ $popover-header-bg: $white;
 // Color Modifiers
 
 $link-color: theme-color("primary");
-$component-active-bg: theme-color("primary");
-$custom-control-indicator-checked-disabled-bg: rgba(theme-color("primary"), .5);
+$component-active-bg: $primary;
+$custom-control-indicator-checked-disabled-bg: rgba($brand, .5);
 $form-feedback-valid-color: theme-color("success");
 $form-feedback-invalid-color: theme-color("danger");
 $progress-bar-bg: theme-color("primary");
