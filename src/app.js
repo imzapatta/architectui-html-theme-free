@@ -1,9 +1,11 @@
 // Imports
 
-import $ from "jquery";
+var $ = require('jquery');
 import 'bootstrap';
 import 'metismenu';
 
+global.$ = $;
+global.jQuery = $;
 // Stylesheets
 
 import './assets/base.scss';

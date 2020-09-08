@@ -42,11 +42,13 @@
   }
 
   li {
+    cursor: pointer;
+    
     a {
       display: block;
       line-height: 2.4rem;
       height: 2.4rem;
-      padding: 0 $layout-spacer-x 0 45px;
+      padding: 0 $layout-spacer-x 0 0.5rem;
       position: relative;
       @include border-radius($border-radius);
       color: $gray-800;
@@ -55,7 +57,7 @@
       margin: .1rem 0;
 
       &:hover {
-        color: $white;
+        color: $white !important;
         background: $dropdown-link-hover-bg;
         text-decoration: none;
 
@@ -77,6 +79,12 @@
       }
     }
 
+    &.app-sidebar__heading.collapsed{
+      i.metismenu-state-icon{
+        transform: rotate(-180deg);
+      }
+    }
+
     a.mm-active {
       color: $white;
       background: $dropdown-link-hover-bg;
@@ -84,8 +92,7 @@
     }
   }
 
-  i.metismenu-state-icon,
-  i.metismenu-icon {
+  i.metismenu-state-icon {
     text-align: center;
     width: 34px;
     height: 34px;
@@ -94,7 +101,7 @@
     left: 5px;
     top: 50%;
     margin-top: -17px;
-    font-size: 1.5rem;
+    font-size: 1rem;
     opacity: .3;
     transition: color 300ms;
   }
