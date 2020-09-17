@@ -195,3 +195,10 @@ $list-group-border-color: rgba($primary, .08) !default;
     @include bg-gradient-variant(".bg-gradient-#{$color}", $value);
   }
 }
+
+.toast-container{
+  &.top-right {
+    top: 4rem;
+    right: 0rem;
+  }
+}

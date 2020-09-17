@@ -103,8 +103,8 @@ module.exports = (options) => {
     if (options.isProduction) {
         webpackConfig.entry = [
             './src/app.js',
-            './src/scripts-init/demo.js',
-            './src/scripts-init/toastr.js',
+            //'./src/scripts-init/demo.js',
+            //'./src/scripts-init/toastr.js',
             './src/scripts-init/scrollbar.js'
         ];
 

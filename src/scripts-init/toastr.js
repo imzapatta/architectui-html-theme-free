@@ -2,6 +2,7 @@
 
 import toastr from 'toastr';
 
+
 $(document).ready(() => {
 
     $(function () {
