@@ -26,6 +26,11 @@
   .table {
     background-color: $body-bg;
   }
+
+  thead{
+    background-color: $thead-bg;
+    color: $white;
+  }
 }
 
 

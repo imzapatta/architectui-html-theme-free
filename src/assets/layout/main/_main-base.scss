@@ -16,6 +16,10 @@
   .app-main__inner {
     padding: $grid-gutter-width $grid-gutter-width 0;
     flex: 1;
+
+    .main-card{
+      max-width: 1490px;
+    }
   }
 }
 

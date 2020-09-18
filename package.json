@@ -70,6 +70,7 @@
     "popper.js": "^1.14",
     "toastr": "^2.1.4",
     "wnumb": "^1.1.0",
+    "xlsx": "^0.16.7",
     "yarn": "^1.13.0"
   },
   "resolutions": {
