@@ -2,6 +2,8 @@
 
 import PerfectScrollbar from 'perfect-scrollbar';
 
+global.PerfectScrollbar = PerfectScrollbar;
+
 $(document).ready(() => {
 
     setTimeout(function () {

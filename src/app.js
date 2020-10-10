@@ -88,3 +88,8 @@ $(document).ready(() => {
 
 });
 
+
+$(".cargar-contenido-loader").on("click",
+    function(e) {
+        Loader.show();
+});

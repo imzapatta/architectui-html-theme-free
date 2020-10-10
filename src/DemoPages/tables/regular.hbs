@@ -1,313 +1,70 @@
-{{#> base }}
-    {{> AppSidebar/sidebar tables-regular=this }}
-    <div class="app-main__outer">
-        <div class="app-main__inner">
-            {{> AppMain/page-title }}
-            <div class="row">
-                <div class="col-lg-6">
-                    <div class="main-card mb-3 card">
-                        <div class="card-body"><h5 class="card-title">Simple table</h5>
-                            <table class="mb-0 table">
-                                <thead>
-                                <tr>
-                                    <th>#</th>
-                                    <th>First Name</th>
-                                    <th>Last Name</th>
-                                    <th>Username</th>
-                                </tr>
-                                </thead>
-                                <tbody>
-                                <tr>
-                                    <th scope="row">1</th>
-                                    <td>Mark</td>
-                                    <td>Otto</td>
-                                    <td>@mdo</td>
-                                </tr>
-                                <tr>
-                                    <th scope="row">2</th>
-                                    <td>Jacob</td>
-                                    <td>Thornton</td>
-                                    <td>@fat</td>
-                                </tr>
-                                <tr>
-                                    <th scope="row">3</th>
-                                    <td>Larry</td>
-                                    <td>the Bird</td>
-                                    <td>@twitter</td>
-                                </tr>
-                                </tbody>
-                            </table>
-                        </div>
-                    </div>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <link rel="icon" type="image/x-icon" href=@Url.Content("~/favicon.ico")/>
+    <link rel="shortcut icon" type="image/x-icon" href=@Url.Content("~/favicon.ico")/>
+    <base href='@Url.Content("~/")'>
+
+    <title>@ViewData["Title"] - MAPFRE</title>
+
+    <link rel="stylesheet" href="~/main.css" asp-append-version="true"/>
+    <link href="~/lib/Toast-1.1.0/toast.min.css" rel="stylesheet">
+    <link href="~/assets/css/Loader/loader_2.css" rel="stylesheet"/>
+</head>
+<body>
+<main class="d-flex align-items-center min-vh-100 py-3 py-md-0">
+    <div class="container">
+        <div class="card login-card">
+            <div class="row no-gutters">
+                <div class="col-md-5">
+                    <img src="assets/images/login.jpg" alt="login" class="login-card-img">
                 </div>
-                <div class="col-lg-6">
-                    <div class="main-card mb-3 card">
-                        <div class="card-body"><h5 class="card-title">Table bordered</h5>
-                            <table class="mb-0 table table-bordered">
-                                <thead>
-                                <tr>
-                                    <th>#</th>
-                                    <th>First Name</th>
-                                    <th>Last Name</th>
-                                    <th>Username</th>
-                                </tr>
-                                </thead>
-                                <tbody>
-                                <tr>
-                                    <th scope="row">1</th>
-                                    <td>Mark</td>
-                                    <td>Otto</td>
-                                    <td>@mdo</td>
-                                </tr>
-                                <tr>
-                                    <th scope="row">2</th>
-                                    <td>Jacob</td>
-                                    <td>Thornton</td>
-                                    <td>@fat</td>
-                                </tr>
-                                <tr>
-                                    <th scope="row">3</th>
-                                    <td>Larry</td>
-                                    <td>the Bird</td>
-                                    <td>@twitter</td>
-                                </tr>
-                                </tbody>
-                            </table>
+                <div class="col-md-7">
+                    <div class="card-body">
+                        <div class="brand-wrapper">
+                            <img src="assets/images/logo.svg" alt="logo" class="logo">
                         </div>
-                    </div>
-                </div>
-                <div class="col-lg-6">
-                    <div class="main-card mb-3 card">
-                        <div class="card-body"><h5 class="card-title">Table without border</h5>
-                            <table class="mb-0 table table-borderless">
-                                <thead>
-                                <tr>
-                                    <th>#</th>
-                                    <th>First Name</th>
-                                    <th>Last Name</th>
-                                    <th>Username</th>
-                                </tr>
-                                </thead>
-                                <tbody>
-                                <tr>
-                                    <th scope="row">1</th>
-                                    <td>Mark</td>
-                                    <td>Otto</td>
-                                    <td>@mdo</td>
-                                </tr>
-                                <tr>
-                                    <th scope="row">2</th>
-                                    <td>Jacob</td>
-                                    <td>Thornton</td>
-                                    <td>@fat</td>
-                                </tr>
-                                <tr>
-                                    <th scope="row">3</th>
-                                    <td>Larry</td>
-                                    <td>the Bird</td>
-                                    <td>@twitter</td>
-                                </tr>
-                                </tbody>
-                            </table>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-lg-6">
-                    <div class="main-card mb-3 card">
-                        <div class="card-body"><h5 class="card-title">Table dark</h5>
-                            <table class="mb-0 table table-dark">
-                                <thead>
-                                <tr>
-                                    <th>#</th>
-                                    <th>First Name</th>
-                                    <th>Last Name</th>
-                                    <th>Username</th>
-                                </tr>
-                                </thead>
-                                <tbody>
-                                <tr>
-                                    <th scope="row">1</th>
-                                    <td>Mark</td>
-                                    <td>Otto</td>
-                                    <td>@mdo</td>
-                                </tr>
-                                <tr>
-                                    <th scope="row">2</th>
-                                    <td>Jacob</td>
-                                    <td>Thornton</td>
-                                    <td>@fat</td>
-                                </tr>
-                                <tr>
-                                    <th scope="row">3</th>
-                                    <td>Larry</td>
-                                    <td>the Bird</td>
-                                    <td>@twitter</td>
-                                </tr>
-                                </tbody>
-                            </table>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-lg-6">
-                    <div class="main-card mb-3 card">
-                        <div class="card-body"><h5 class="card-title">Table with hover</h5>
-                            <table class="mb-0 table table-hover">
-                                <thead>
-                                <tr>
-                                    <th>#</th>
-                                    <th>First Name</th>
-                                    <th>Last Name</th>
-                                    <th>Username</th>
-                                </tr>
-                                </thead>
-                                <tbody>
-                                <tr>
-                                    <th scope="row">1</th>
-                                    <td>Mark</td>
-                                    <td>Otto</td>
-                                    <td>@mdo</td>
-                                </tr>
-                                <tr>
-                                    <th scope="row">2</th>
-                                    <td>Jacob</td>
-                                    <td>Thornton</td>
-                                    <td>@fat</td>
-                                </tr>
-                                <tr>
-                                    <th scope="row">3</th>
-                                    <td>Larry</td>
-                                    <td>the Bird</td>
-                                    <td>@twitter</td>
-                                </tr>
-                                </tbody>
-                            </table>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-lg-6">
-                    <div class="main-card mb-3 card">
-                        <div class="card-body"><h5 class="card-title">Table responsive</h5>
-                            <div class="table-responsive">
-                                <table class="mb-0 table">
-                                    <thead>
-                                    <tr>
-                                        <th>#</th>
-                                        <th>Table heading</th>
-                                        <th>Table heading</th>
-                                        <th>Table heading</th>
-                                        <th>Table heading</th>
-                                        <th>Table heading</th>
-                                        <th>Table heading</th>
-                                    </tr>
-                                    </thead>
-                                    <tbody>
-                                    <tr>
-                                        <th scope="row">1</th>
-                                        <td>Table cell</td>
-                                        <td>Table cell</td>
-                                        <td>Table cell</td>
-                                        <td>Table cell</td>
-                                        <td>Table cell</td>
-                                        <td>Table cell</td>
-                                    </tr>
-                                    <tr>
-                                        <th scope="row">2</th>
-                                        <td>Table cell</td>
-                                        <td>Table cell</td>
-                                        <td>Table cell</td>
-                                        <td>Table cell</td>
-                                        <td>Table cell</td>
-                                        <td>Table cell</td>
-                                    </tr>
-                                    <tr>
-                                        <th scope="row">3</th>
-                                        <td>Table cell</td>
-                                        <td>Table cell</td>
-                                        <td>Table cell</td>
-                                        <td>Table cell</td>
-                                        <td>Table cell</td>
-                                        <td>Table cell</td>
-                                    </tr>
-                                    </tbody>
-                                </table>
+                        <p class="login-card-description">Inicia Sesión con tu Cuenta</p>
+                        <form method="post" asp-controller="Auth" asp-action="Login">
+                            <div asp-validation-summary="All" class="text-danger"></div>
+                            <div class="form-group">
+                                <label class="sr-only" asp-for="user">Usuario</label>
+                                <input autocomplete="off" type="text" class="form-control" asp-for="user" placeholder="Usuario" required>
+                                <span class="text-danger" asp-validation-for="user"></span>
                             </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-lg-6">
-                    <div class="main-card mb-3 card">
-                        <div class="card-body"><h5 class="card-title">Table sizing</h5>
-                            <table class="mb-0 table table-sm">
-                                <thead>
-                                <tr>
-                                    <th>#</th>
-                                    <th>First Name</th>
-                                    <th>Last Name</th>
-                                    <th>Username</th>
-                                </tr>
-                                </thead>
-                                <tbody>
-                                <tr>
-                                    <th scope="row">1</th>
-                                    <td>Mark</td>
-                                    <td>Otto</td>
-                                    <td>@mdo</td>
-                                </tr>
-                                <tr>
-                                    <th scope="row">2</th>
-                                    <td>Jacob</td>
-                                    <td>Thornton</td>
-                                    <td>@fat</td>
-                                </tr>
-                                <tr>
-                                    <th scope="row">3</th>
-                                    <td>Larry</td>
-                                    <td>the Bird</td>
-                                    <td>@twitter</td>
-                                </tr>
-                                </tbody>
-                            </table>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-lg-6">
-                    <div class="main-card mb-3 card">
-                        <div class="card-body"><h5 class="card-title">Table striped</h5>
-                            <table class="mb-0 table table-striped">
-                                <thead>
-                                <tr>
-                                    <th>#</th>
-                                    <th>First Name</th>
-                                    <th>Last Name</th>
-                                    <th>Username</th>
-                                </tr>
-                                </thead>
-                                <tbody>
-                                <tr>
-                                    <th scope="row">1</th>
-                                    <td>Mark</td>
-                                    <td>Otto</td>
-                                    <td>@mdo</td>
-                                </tr>
-                                <tr>
-                                    <th scope="row">2</th>
-                                    <td>Jacob</td>
-                                    <td>Thornton</td>
-                                    <td>@fat</td>
-                                </tr>
-                                <tr>
-                                    <th scope="row">3</th>
-                                    <td>Larry</td>
-                                    <td>the Bird</td>
-                                    <td>@twitter</td>
-                                </tr>
-                                </tbody>
-                            </table>
-                        </div>
+                            <div class="form-group mb-4">
+                                <label class="sr-only" asp-for="password">Contraseña</label>
+                                <input autocomplete="off" id="password" type="password" class="form-control" asp-for="password" placeholder="Contraseña" required>
+                                <span class="text-danger" asp-validation-for="password"></span>
+                                
+                            </div>
+                            <input name="login" id="login" class="btn btn-block login-btn mb-4" type="button" value="Ingresar">
+                        </form>
+                        <a href="https://app.mapfre.com.hn/PortalAplicaciones/Cuenta/RecuperarContrasena" class="forgot-password-link">¿Tienes problemas para iniciar sesión?</a>
+                        <p class="login-card-footer-text">
+                            Si aún no tienes una cuenta
+                            <u>
+                                <a href="https://app.mapfre.com.hn/PortalAplicaciones/Autentication/GestionarUsuario" class="text-reset">Regístrate</a>
+                            </u>
+                        </p>
+                        <nav class="login-card-footer-nav">
+                            <a href="https://www.mapfre.com.hn">MAPFRE Honduras &nbsp;|&nbsp;</a>
+                            <a href="https://www.mapfre.com" target="_blank">MAPFRE en el mundo &nbsp;|&nbsp;</a>
+                            <a href="https://www.fundacionmapfre.org/fundacion/es_es/default.jsp" target="_blank">Fundación MAPFRE</a>
+                        </nav>
                     </div>
                 </div>
             </div>
         </div>
-        {{> AppFooter/footer }}
     </div>
-{{/ base }}
+</main>
+<input type="hidden" value="@error" id="error"/>
+<script type="text/javascript" src="~/assets/scripts/main.js" asp-append-version="true"></script>
+
+<script src="~/lib/Toast-1.1.0/toast.min.js"></script>
+<script src="~/assets/scripts/loader.js" asp-append-version="true"></script>
+<script src="~/assets/scripts/Notifications.js" asp-append-version="true"></script>
+</body>
+</html>
